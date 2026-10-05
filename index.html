@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Dr. Ji — A Little Birthday Surprise</title>
+<meta name="description" content="A little birthday surprise made especially for Dr. Ji.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stars"></div>
+<main class="experience">
+
+<section class="scene active" id="scene1">
+<p class="tiny">A little something, just for you</p>
+<h1>Hey, <em>Dr. Ji...</em></h1>
+<p class="subtitle">Someone made a tiny world for you.</p>
+<button class="primary" data-next="2">Open your surprise ✨</button>
+</section>
+
+<section class="scene" id="scene2">
+<p class="tiny">Before we continue...</p>
+<h2>I have one tiny<br><em>question.</em></h2>
+<button class="primary" id="askBtn">Okay, ask me</button>
+<div class="question hidden" id="question">
+<p>Do you love me?</p>
+<div class="choices">
+<button class="primary" data-next="3">Of course 💗</button>
+<button class="ghost" id="thinkBtn">Let me think...</button>
+</div>
+<p class="answer hidden">Good answer. I had a feeling. ♡</p>
+</div>
+</section>
+
+<section class="scene" id="scene3">
+<div class="confetti" id="confetti"></div>
+<p class="tiny">Okay... now for the important part.</p>
+<h2 class="birthday">HAPPY<br><em>BIRTHDAY</em></h2>
+<div class="name">DR. JI</div>
+<p class="subtitle">5 October · Your special day</p>
+<button class="primary" data-next="4">There's more... →</button>
+</section>
+
+<section class="scene" id="scene4">
+<p class="tiny">Make a wish...</p>
+<div class="cake-wrap">
+<div class="flame f1"></div><div class="flame f2"></div><div class="flame f3"></div>
+<div class="candles"><span></span><span></span><span></span></div>
+<div class="cake-top"></div><div class="cake-body"><i></i><i></i><i></i></div>
+<div class="plate"></div><div class="smoke"></div>
+</div>
+<h2>Blow out the<br><em>candles.</em></h2>
+<p class="hint">Tap the button to blow them out.</p>
+<button class="primary" id="blowBtn">Tap to blow the candles 🕯️</button>
+<button class="secondary hidden" id="afterBlow" data-next="5">Wish made. ✨ Continue</button>
+</section>
+
+<section class="scene" id="scene5">
+<div class="envelope" id="envelope">
+<div class="flap"></div><div class="seal">♡</div><div class="paper">A little letter<br>for you</div>
+</div>
+<h2>Something I<br><em>wanted to say...</em></h2>
+<button class="primary" id="openLetter">Open it 💌</button>
+<article class="letter hidden" id="letter">
+<p class="date">5 October</p>
+<p>Dear Dr. Ji,</p>
+<p>You are very cute and such a gentleman, and I really appreciate it.</p>
+<p>And of course...</p>
+<p class="special">Chalray chalray waal ♡</p>
+<p>I hope your birthday is as lovely, memorable and special as you are.</p>
+<p>Keep smiling, keep being you, and have the happiest birthday.</p>
+<p class="signature">With love,<br><em>Your future wife</em></p>
+</article>
+<button class="primary hidden" id="letterNext" data-next="6">Keep going →</button>
+</section>
+
+<section class="scene" id="scene6">
+<p class="tiny">One last little surprise</p>
+<h2>A birthday wish<br><em>for you.</em></h2>
+<div class="wish-card"><span>✦</span><p>May this year bring you more reasons to smile, more moments worth remembering, and everything your heart quietly wishes for.</p><span>✦</span></div>
+<button class="primary" data-next="7">One more thing... →</button>
+</section>
+
+<section class="scene night" id="scene7">
+<div class="moon"></div>
+<div class="final-content">
+<p class="tiny">And finally...</p>
+<h2>Happy Birthday,<br><em>Dr. Ji.</em></h2>
+<p class="final-message">Thank you for being you. I hope today reminds you just how special you are.</p>
+<p class="signature">— Your future wife ♡</p>
+<button class="ghost" id="replay">Replay the surprise ↻</button>
+</div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
